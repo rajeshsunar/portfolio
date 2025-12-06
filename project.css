@@ -1,0 +1,365 @@
+/* Remove default cursor */
+body {
+  background: rgb(29,40,41);
+  background: -moz-linear-gradient(90deg, rgba(29,40,41,1) 0%, rgba(24,30,31,1) 11%, rgba(19,19,20,1) 41%, rgba(19,19,20,1) 58%, rgba(24,30,31,1) 85%, rgba(29,40,41,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(29,40,41,1) 0%, rgba(24,30,31,1) 11%, rgba(19,19,20,1) 41%, rgba(19,19,20,1) 58%, rgba(24,30,31,1) 85%, rgba(29,40,41,1) 100%);
+  background: linear-gradient(90deg, rgba(29,40,41,1) 0%, rgba(24,30,31,1) 11%, rgba(19,19,20,1) 41%, rgba(19,19,20,1) 58%, rgba(24,30,31,1) 85%, rgba(29,40,41,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d2829",endColorstr="#1d2829",GradientType=1);
+  color: white;
+  padding:3rem;
+  position: relative;
+  overflow-x: hidden;
+  font-family: Arial;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    padding-bottom: 2rem;
+}
+
+/* Navbar container */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: white;
+}
+
+/* Contact Button */
+.contact-btn {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    background-color: rgba(143, 143, 143, 0.2);
+    border: 1px solid rgba(102, 102, 102, 0.5);
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.contact-btn:hover {
+    background-color: #76b0ab37;
+}
+
+/* Main Section */
+main {
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 85.7vh;
+}
+/* .title-section {
+    margin-top: 3rem;
+} */
+
+main h1{
+    text-align: center;
+    font-size: 9rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    line-height: 1;
+    background-image: linear-gradient(#858585, #ffffff);
+    color: transparent;
+    background-clip: text;
+}
+
+/* main h1 {
+    text-align: center;
+    font-size: 9rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    line-height: 1;
+
+    background-image: url("./photos/RS-3.jpg");
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+} */
+
+.location {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.location p {
+    background-image: linear-gradient(to right, #76b0ab, #ffffff, #842626);
+    color: transparent;
+    background-clip: text;
+    font-size: 1.5rem;
+}
+
+/* Bio Section */
+
+.bio-section {
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: 1px;
+    max-width: 22rem;
+}
+
+/* Scrooling effect */
+.scroll-down {
+    height: 5rem;
+    width: 2rem;
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.scroll-down::before,
+.scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid lightgray;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 3s ease-in-out infinite;
+}
+
+.scroll-down::before {
+    top: 30%;
+    animation-delay: 0.8s;
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+    30%,60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 90%;
+    }
+
+}
+
+
+.spline-wrapper {
+position: absolute;
+    top: -40%;
+    right: -14%;
+    width: 130%;
+    height: 130%;
+    overflow: hidden;
+}
+
+
+
+/* ABOUT SECTION */
+.about-section {
+    height: 95vh;
+    width: 100%;
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-title {
+    margin-bottom: 5%;
+    font-size: 5rem;
+    background-image: linear-gradient(rgb(133, 133, 133), rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
+}
+
+
+.bento-grid {
+    position: relative;
+    display: grid;
+    height: 90vh;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "intro intro tech"
+        "time passion tech"
+    ;
+    gap: 1.5rem;
+}
+
+.card {
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.07));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24PX;
+    padding: 2rem;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* CARD SPECIFIC AREAS */
+    .intro { grid-area: intro; min-height: 300px;}
+    .tech {grid-area: tech; min-height: 450px;}
+    .time { grid-area: time; min-height: 220px;}
+    .passion { grid-area: passion; min-height: 220px;}
+
+
+/* HOVER EFFECTS */
+.card:hover {
+    border-color: transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+/* SPOTLIGHT EFFECT */
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 0;
+    background: radial-gradient(circle at var(--x) var(--y),
+                rgba(124, 233, 230, 0.1),
+                transparent 40%
+            );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.card-text {
+    color: #7b7b7b;
+    line-height: 1.6;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+}
+
+.bento-grid .background-img {
+    position: absolute;
+    inset: -1% -1% -1% -1%;
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.model-box {
+    position: absolute;
+    right: 5%;
+    top: -35%;
+    width: 30rem;
+    height: 30rem;
+}
+
+.info-3D {
+    width: 150%;
+    height: 150%;
+    mix-blend-mode: lighten;
+    align-items: right;
+}
+.bento-grid .skills-group {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    width: 70%;
+}
+
+.bento-grid .btn {
+    position: absolute;
+    bottom: 10%;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(124, 233, 230, 0.1);
+    color: #76b0ab;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.bento-grid .btn:hover {
+    background-color: #76b0ab;
+    color: black;
+}
+
+
+/* Main cursor circle */
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: #ff006699;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 30px rgba(255, 0, 102, 0.7);
+  transition: 0.1s ease-out;
+}
+
+
+/* Particles */
+.particle {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 0, 102, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 0.6s linear forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2) translate(-50%, -50%);
+  }
+}
+
+/* Click animation (expand + shrink) */
+@keyframes clickExpand {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(2.5); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
