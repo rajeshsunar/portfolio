@@ -3,190 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indivisual Project</title>
-    <link rel="stylesheet" href="project.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="new.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.6/build/spline-viewer.js"></script>
 </head>
 <body>
-
     <!-- Custom Cursor -->
-  <div class="cursor"></div>
-  <div id="trail"></div>
-  <!-- Header Section  -->
-  <header>
-    <div class="nav-bar">
-        <div class="logo"> RAJESHSUNAR </div>
-        <button class="contact-btn">Contact</button>
+    <div class="cursor"></div>
+    <div id="trail"></div>
+
+    <!-- Spline 3D Background -->
+    <div class="spline-background">
+        <spline-viewer url="https://prod.spline.design/5WMtlgNAzTLpKW7S/scene.splinecode"></spline-viewer>
     </div>
-    </header>
-   
 
-    <!-- Main Section  -->
-    <main>
-        <div class="title-section">
-            <!-- <h1>Rajesh</h1> -->
-             <div class="spline-wrapper">
-                <spline-viewer url="https://prod.spline.design/MqrXO8X6BISaNS9K/scene.splinecode"></spline-viewer>
-            </div>
-            <div class="location">
-                <p>Made<br>In<br>Nepal</p>
-            </div>
+    <!-- Center Name -->
+    <div class="center-name">
+        <h1>Rajesh Sunar</h1>
+        <p>Developer • Designer • Creator</p>
+    </div>
+
+    <!-- About Me - Top Left -->
+    <div class="corner" id="about">
+        <div class="corner-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            <span>About Me</span>
         </div>
-    <!-- Bio Section -->
-     <div class="bio-section">
-        <p class="bio">
-            I am Rajesh Sunar. Currenty Working as a <span style="color: #76b0ab;">Senior-Junior Developer </span>
-             at Outside, under the supervision of <span style="color: #842626;"> Sanjay Subba Sir</span> . All things that i learn about software 
-             development is from him. The one only Don is Mister Sanjay Subba Sir.
-        </p>
-     </div>
+    </div>
+    <div class="content-panel" id="about-content">
+        <img class=aboutpic src="./Photos/1.png">
+        <h2>About Me</h2>
+        <p>Hello! I'm Rajesh Sunar, a passionate web developer and designer with a love for creating beautiful, functional digital experiences.</p>
+        <p>I specialize in front-end development and have experience working with various technologies including HTML, CSS, JavaScript, and modern frameworks.</p>
+        <p><strong>Skills:</strong></p>
+        
+        <ul>
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Design Principles</li>
+            <li>Problem Solving & Critical Thinking</li>
+            <li>Git & Version Control</li>
+        </ul>
+    </div>
 
-     <!-- Scrolling -->
-      <div class="scroll-down"></div>
-    </main>
-
-    <!-- About Me -->
- <section class="about-section">
-        <h1 class="about-title">About Me</h1>
-
-        <div class="bento-grid">
-            <div class="card intro">
-                <h2 class="card-title">HI THERE, I'M Rajesh</h2>
-                <p class="card-text">
-                    I specialize in frontend development, crafting dynamic, visually engaging, and highly
-                    responsive websites that provide seamless user experiences. With a strong foundation in HTML, CSS,
-                     and JavaScript, I focus on building modern web interfaces that are not only aesthetically appealing
-                     but also optimized for performance and accessibility. My expertise extends to advanced frameworks like
-                     React and Tailwind CSS, enabling me to create interactive, scalable, and efficient applications.
-                     Whether it's designing sleek UI components, implementing smooth animations, or enhancing user
-                     interactions, my goal is to develop web solutions that are both functional and innovative.
-                </p>
-
-                <img src="./photos/gradient1.png" alt="" class="background-img">
-
-                <div class="model-box">
-                    <!-- <spline-viewer class="info-3D" url="https://prod.spline.design/qiGD3Sq6465bil4K/scene.splinecode"></spline-viewer> -->
-                <spline-viewer class="info-3D" url="https://prod.spline.design/bUaZA1GHe-uKUov8/scene.splinecode"></spline-viewer>
-                </div>
-            </div>
-
-            <div class="card tech" data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine" data-aos-duration="1500">
-                <h2 class="card-title">TECH STACK</h2>
-                <p class="card-text">
-                    I specialize in a diverse range of programming languages, frameworks, and
-                    development tools that empower me to build robust, scalable, and high-performing
-                     applications. With a strong command of HTML, CSS, and JavaScript, I create
-                      visually appealing and responsive web interfaces that enhance user engagement.
-                       My expertise extends to modern frameworks like React, Tailwind CSS, and Spline,
-                        enabling me to develop interactive, efficient, and maintainable front-end architectures.
-                </p>
-
-                <img src="./photos/gradient 2.png" alt="" class="background-img">
-                <img src="./photos/skills group.png group.png" alt="" class="skills-group">
-            </div>
-
-            <div class="card time">
-                <h2 class="card-title">VERY FLEXIBLE WITH COMMUNICATIONS & LOCATIONS</h2>
-
-                <p class="card-text">Based in Nepal, Kathmandu and open to remote work worldwide.</p>
-
-                <img src="./photos/gradient3&4.png" alt="" class="background-img">
-
-                <button class="btn"><i class='bx bx-send'></i>CONTACT ME</button>
-            </div>
-
-            <div class="card passion">
-                <h2 class="card-title">PASSION FOR CODING</h2>
-                <p class="card-text">
-                    Solving problems and building solutions through code. Programming is my 
-                    profession—it's my passion. I enjoy exploring new technologies and enhancing my skills.
-                </p>
-
-                <img src="./photos/gradient3&4.png" alt="" class="background-img">
-            </div>
+    <!-- Projects - Top Right -->
+    <div class="corner" id="projects">
+        <div class="corner-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
+            <span>Projects</span>
         </div>
-    </section>
-
- <!-- CONTACT SECTION -->
-     <section class="contact-section" >
-        <div class="section-header">
-            <h3>Get In Touch</h3>
-            <p>Have a project in mind or just want to say hello? Drop me a message</p>
+    </div>
+    <div class="content-panel" id="projects-content">
+        <h2>My Projects</h2>
+        <div class="project-item">
+            <h3>E-Commerce Website</h3>
+            <p>A fully responsive online store with shopping cart functionality and payment integration.</p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
         </div>
-
-        <div class="contact-grid">
-
-            <div class="info-card">
-                <h3>Contact info</h3>
-
-                <div class="contact-item">
-                    <p>Email</p>
-                    <a href="rajeshsunar2021ad@gmail.com">rajeshsunar2021ad@gmail.com</a>
-                </div>
-
-                <div class="contact-item">
-                    <p>Phone</p>
-                    <a href="9742857007">+977 -972324324</a>
-                </div>
-
-                <div class="contact-item">
-                    <p>Location</p>
-                    <a href=" https://www.google.com/search?q=kathmandu+nepal&oq=kathmandu+nepal&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyCggBEC4YsQMYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPdIBCDQ2NjhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8 ">Kathmandu, Nepal</a>
-                </div>
-
-                <div class="social-link">
-                    <p>Contacy with me</p>
-                    <a href="https://github.com/rajeshsunar">GitHub</a>
-                    <a href="https://www.linkedin.com/in/rajesh-sunar-80882b284/">Linkedin</a>
-                    <a href="https://x.com/SunarRajes43749">X</a>
-                </div>
-
-            </div>
-
-            <div class="info-card">
-                <div class="info-card-content">
-                    <h3>Send Message</h3>
-
-                    <form id="contactForm">
-
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your name" required class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="subject" required class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <textarea name="message" id="message" placeholder="Your Message" required class="form-control"></textarea>
-                        </div>
-
-                        <button type="submit" id="submitBtn" class="message-btn">Send Message</button>
-
-                        <div class="success-message" id="successMessage">
-                            Message sent successfully! I'll get back to you soon.
-                        </div>
-
-                    </form>
-                </div>
-            </div>
+        <div class="project-item">
+            <h3>Weather App</h3>
+            <p>Real-time weather application that fetches data from weather API and displays forecasts.</p>
+            <p><strong>Tech:</strong> JavaScript, REST API</p>
         </div>
-     </section>
-<footer>
-        <h3>©️2025, Rajesh Sunar</h3>
-        <div class="box-icons">
-            <a href="#"><i class='bx bxl-youtube'></i></a>
-            <a href="#"><i class='bx bxl-github' ></i></a>
-            <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+        <div class="project-item">
+            <h3>Portfolio Template</h3>
+            <p>A modern, animated portfolio template for showcasing creative work.</p>
+            <p><strong>Tech:</strong> HTML, CSS3, JavaScript</p>
         </div>
-     </footer>
-  <script src="project.js"></script>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.6/build/spline-viewer.js"></script>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.6/build/spline-viewer.js"></script>
+    </div>
+
+    <!-- Blog - Bottom Left -->
+    <div class="corner" id="blog">
+        <div class="corner-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+            <span>Blog</span>
+        </div>
+    </div>
+    <div class="content-panel" id="blog-content">
+        <h2>Blog</h2>
+        <div class="blog-item">
+            <h3>Getting Started with Web Development</h3>
+            <p>An introduction to the fundamentals of web development and the technologies you need to know.</p>
+            <p><em>Posted: November 2024</em></p>
+        </div>
+        <div class="blog-item">
+            <h3>CSS Grid vs Flexbox</h3>
+            <p>Understanding when to use CSS Grid and when to use Flexbox for your layouts.</p>
+            <p><em>Posted: October 2024</em></p>
+        </div>
+        <div class="blog-item">
+            <h3>JavaScript Best Practices</h3>
+            <p>Tips and tricks for writing clean, maintainable JavaScript code.</p>
+            <p><em>Posted: September 2024</em></p>
+        </div>
+    </div>
+
+    <!-- Contact - Bottom Right -->
+    <div class="corner" id="contact">
+        <div class="corner-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>Contact</span>
+        </div>
+    </div>
+    <div class="content-panel" id="contact-content">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Feel free to reach out through any of these channels:</p>
+        <div class="contact-links">
+            <a href="rajesh.sunar@westcliff.com">Email </a>
+            <a href="+977 974283232">Phone</a>
+            <a href="https://github.com/rajeshsunar" target="_blank">GitHub</a>
+           <a href="https://www.linkedin.com/in/rajesh-sunar-80882b284/" target="_blank">Linkedin</a>
+           <a href="https://x.com/SunarRajes43749">X</a>
+        </div>
+    </div>
+
+    <script src="new.js"></script>
 </body>
 </html>
